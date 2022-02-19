@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-      title: `Henderson Reporting`,
+    title: `Henderson Reporting`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-react-helmet", {
@@ -9,11 +9,11 @@ module.exports = {
       "icon": "src/images/icon.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "images"
-  }]
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
+    }]
 };
