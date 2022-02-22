@@ -1,0 +1,24 @@
+.home-banner {
+  background: url("../images/stock/toronto2.jpg") no-repeat;
+  background-size: cover;
+}
+
+.about-banner {
+  background: url("../images/stock/legal books.jpg") no-repeat;
+  background-size: cover;
+}
+
+.services-banner {
+  background: url("../images/stock/one laptop.jpg") no-repeat;
+  background-size: cover;
+}
+
+.contact-banner {
+  background: url("../images/stock/canada post.jpg") no-repeat;
+  background-size: cover;
+}
+
+.careers-banner {
+  background: url("../images/stock/office.jpg") no-repeat;
+  background-size: cover;
+}

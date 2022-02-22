@@ -34,7 +34,7 @@ module.exports = {
       options: {
         fonts: [
           `merriweather`,
-          `fira sans`,
+          `fira sans\:300,400,400i,700`,
           `courier prime`
         ],
         display: 'swap'
