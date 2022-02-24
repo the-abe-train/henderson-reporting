@@ -2,31 +2,33 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../layouts/Layout";
 import { careersBanner } from "../styles/banners.module.css";
+import { inside } from "../styles/inside.module.css";
 
 export default function CareersPage() {
   return (
-    <Layout>
+    <Layout page="Careers">
       <section
-        className={`${careersBanner} p-4 h-64 flex flex-col 
+        className={`${careersBanner} ${inside} p-4 h-64 flex flex-col
         justify-between shadow-inner relative`}
       >
-        <div
-          className="w-fill absolute bottom-0 left-0 right-0 px-4 pt-2"
-          style={{ backgroundColor: "rgba(0, 0, 0, .5)" }}
-        >
-          <h1 className="text-4xl py-2 text-teal-100 font-header font-bold">
-            Careers
-          </h1>
-        </div>
+        <h1 className="text-4xl text-teal-100 font-header font-bold absolute bottom-0">
+          Careers
+        </h1>
       </section>
-      <section className="px-4 space-y-4">
-        <div className="p-4 space-y-2 drop-shadow-lg bg-white rounded">
+      <section
+        className={`${inside} px-4 space-y-4 sm:space-y-0 sm:flex justify-between`}
+      >
+        <div
+          className="p-4 h-fit space-y-4 drop-shadow-xl
+        bg-green-50 rounded max-w-sm"
+        >
           <StaticImage
             src="../images/stock/canada court.jpg"
             alt="Court room"
-            className="drop-shadow-md rounded"
+            height={250}
+            className="drop-shadow-md rounded mx-auto block"
           />
-          <h2 className="font-header text-3xl font-bold">Courtroom Monitor</h2>
+          <h2 className="font-header text-2xl font-bold">Courtroom Monitor</h2>
           <div>
             <h3 className="font-bold">Job Description</h3>
             <ul className="list-disc list-inside">
@@ -55,13 +57,14 @@ export default function CareersPage() {
             </ul>
           </div>
         </div>
-        <div className="p-4 space-y-2 drop-shadow-lg bg-white rounded">
+        <div className="p-4 space-y-4 drop-shadow-xl bg-green-50 rounded max-w-sm">
           <StaticImage
             src="../images/stock/writer.jpg"
             alt="Court room"
-            className="drop-shadow-md rounded"
+            height={250}
+            className="drop-shadow-md rounded mx-auto block"
           />
-          <h2 className="font-header text-3xl font-bold">
+          <h2 className="font-header text-2xl font-bold">
             Certified Transcriptionist
           </h2>
           <div>

@@ -8,25 +8,28 @@ import Medical from "../images/icons/medical.svg";
 import Maple from "../images/icons/maple.svg";
 import Calendar from "../images/icons/calendar.svg";
 import Document from "../images/icons/document.svg";
+import { inside } from "../styles/inside.module.css";
 
 export default function ServicesPage() {
   return (
-    <Layout>
+    <Layout page="Services">
       <section
-        className={`${servicesBanner} p-4 h-64 flex flex-col justify-between shadow-inner relative`}
+        className={`${servicesBanner} ${inside}
+         p-4 h-64 flex flex-col justify-between shadow-inner relative`}
       >
         <h1 className="text-4xl text-teal-100 font-header font-bold absolute bottom-0">
           Services
         </h1>
       </section>
-      <section className="grid gap-4">
-        <div className="mx-4 space-y-2">
+      <section className={`${inside} grid gap-8 md:grid-cols-3`}>
+        <div className="space-y-2">
           <StaticImage
             src="../images/stock/video interview.jpg"
             alt="Video interview"
-            className="my-4 rounded-lg drop-shadow-lg"
+            className="my-4 rounded-sm drop-shadow-lg block"
+            height={200}
           />
-          <h2 className="text-2xl font-header">Audio/video transcription</h2>
+          <h2 className="text-xl font-header">Audio/video transcription</h2>
           <p>
             We provide high fidelity transcriptions of audio and video
             recordings. Our expert transcribers don’t let anything fall through
@@ -36,13 +39,14 @@ export default function ServicesPage() {
             medical (office transcriptions and lectures).
           </p>
         </div>
-        <div className="mx-4 space-y-2">
+        <div className="space-y-2">
           <StaticImage
             src="../images/stock/table interview.jpg"
             alt="Table interview"
-            className="my-4 rounded-lg drop-shadow-lg"
+            className="my-4 rounded-sm drop-shadow-lg block"
+            height={152}
           />
-          <h2 className="text-2xl font-header">
+          <h2 className="text-xl font-header">
             Discovery and deposition services
           </h2>
           <p>
@@ -54,13 +58,14 @@ export default function ServicesPage() {
             recordings over video conference (e.g. Zoom or Skype).
           </p>
         </div>
-        <div className="mx-4 space-y-2">
+        <div className=" space-y-2">
           <StaticImage
             src="../images/stock/letters.jpg"
             alt="Table interview"
-            className="my-4 rounded-lg drop-shadow-lg"
+            className="my-4 rounded-sm drop-shadow-lg block"
+            height={152}
           />
-          <h2 className="text-2xl font-header">Interpreter translations</h2>
+          <h2 className="text-xl font-header">Interpreter translations</h2>
           <p>
             Our team is fluently bilingual and conducts flawless translations
             between French and English, and other languages are available upon
@@ -69,13 +74,13 @@ export default function ServicesPage() {
             documents as well as audio and video.
           </p>
         </div>
-        <div className="mx-4 space-y-2">
+        <div className=" space-y-2">
           <StaticImage
-            src="../images/stock/niagara falls 2.jpg"
+            src="../images/stock/staff laptops.jpg"
             alt="Table interview"
-            className="my-4 rounded-lg drop-shadow-lg"
+            className="my-4 rounded-sm drop-shadow-lg"
           />
-          <h2 className="text-2xl font-header">
+          <h2 className="text-xl font-header">
             Availability and Accessibility
           </h2>
           <p>
@@ -87,7 +92,27 @@ export default function ServicesPage() {
             with clients in the United States upon request.
           </p>
         </div>
-        <div className="mx-4 space-y-2">
+        <div className=" space-y-2">
+          <StaticImage
+            src="../images/stock/niagara falls 2.jpg"
+            alt="Table interview"
+            className="my-4 rounded-sm drop-shadow-lg block"
+            height={180}
+          />
+          <h2 className="text-xl font-header">
+            Specialised Staffing Solutions
+          </h2>
+          <p>
+            If you require a courtroom service that was not listed above, we
+            provide staffing for countless other solutions upon request. Our
+            team of law clerks, court clerks, and reporters are well versed in a
+            multitude of Canadian legal matters and are equipped to handle a
+            myriad of challenges. Don’t hesitate to send us a message to request
+            a service you don’t see listed and we will get back to you as soon
+            as possible.
+          </p>
+        </div>
+        <div className="space-y-2 md:py-40">
           <div className="grid grid-cols-3 items-center justify-items-center gap-4 mt-4 mb-8">
             <Scales />
             <Globe />

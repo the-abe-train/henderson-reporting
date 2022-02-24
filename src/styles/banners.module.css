@@ -3,9 +3,30 @@
   background-size: cover;
 }
 
+@media only screen and (min-width: 600px) {
+  .home-banner {
+    background: url("../images/stock/toronto3.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
 .about-banner {
   background: url("../images/stock/legal books.jpg") no-repeat;
   background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-banner {
+    background: url("../images/stock/legal books.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
 }
 
 .services-banner {
@@ -13,12 +34,45 @@
   background-size: cover;
 }
 
+@media only screen and (min-width: 600px) {
+  .services-banner {
+    background: url("../images/stock/one laptop.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
+}
+
 .contact-banner {
   background: url("../images/stock/canada post.jpg") no-repeat;
   background-size: cover;
 }
 
+@media only screen and (min-width: 600px) {
+  .contact-banner {
+    background: url("../images/stock/canada post2.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
+}
+
 .careers-banner {
   background: url("../images/stock/office.jpg") no-repeat;
   background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .careers-banner {
+    background: url("../images/stock/office.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+  }
 }
