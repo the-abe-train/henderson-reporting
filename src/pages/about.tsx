@@ -32,7 +32,7 @@ export default function AboutPage() {
               Henderson offers its clients an accurate and efficient
               transcription service. Assignments range from one-off
               transcriptions through to the outsourcing of a client’s entire
-              transcription unit. We specialise in the transcription of highly
+              transcription unit. We specialize in the transcription of highly
               sensitive content, where accuracy is of paramount importance.
               Industry sectors include:
             </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               your order and upon request transcripts can be produced 24/7.
             </p>
             <p>
-              Henderson also provides specialised staffing solutions for Courts
+              Henderson also provides specialized staffing solutions for Courts
               and Law Offices. Our expertise in court and other legal
               transcriptions makes us ideally placed to understand the calibre
               of support staff required by the legal profession. We place

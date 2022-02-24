@@ -100,7 +100,7 @@ export default function ServicesPage() {
             height={180}
           />
           <h2 className="text-xl font-header">
-            Specialised Staffing Solutions
+            Specialized Staffing Solutions
           </h2>
           <p>
             If you require a courtroom service that was not listed above, we

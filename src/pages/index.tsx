@@ -99,7 +99,7 @@ export default function IndexPage() {
               Depositions & Transcriptions
             </h1>
             <p className="md:text-lg sm:my-5">
-              Based in toronto, available across Canada.
+              Based in Toronto, available across Canada.
             </p>
           </div>
           <Link to="/contact" className="mx-auto ">
