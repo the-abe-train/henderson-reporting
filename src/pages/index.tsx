@@ -60,7 +60,7 @@ const quotes = [
     quote: `“I’ve used Henderson Reporting & Transcribing Inc. on a number of occasions.  They are professional, very reliable, and have excellent turnaround time for transcripts.  I will absolutely use them again and I highly recommend them for all your court reporting needs.”`,
   },
 ];
-const MAPS_API_KEY = process.env.MAPS_API_KEY || "";
+const MAPS_API_KEY = process.env.GATSBY_MAPS_API_KEY || "";
 
 function reducer(state: number, action: "next" | "prev") {
   switch (action) {

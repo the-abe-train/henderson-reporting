@@ -6,7 +6,7 @@ import Phone from "../images/icons/phone.svg";
 import Map from "../images/icons/map.svg";
 import { inside } from "../styles/inside.module.css";
 
-const MAPS_API_KEY = process.env.MAPS_API_KEY || "";
+const MAPS_API_KEY = process.env.GATSBY_MAPS_API_KEY || "";
 
 export default function ContactPage() {
   return (
