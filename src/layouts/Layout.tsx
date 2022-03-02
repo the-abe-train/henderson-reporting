@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Burger from "../images/icons/hamburger.svg";
 import Phone from "../images/icons/phone.svg";
 import Mail from "../images/icons/mail.svg";
+import LinkedIn from "../images/icons/linked-in.svg";
 import { inside } from "../styles/inside.module.css";
 
 type Props = {
@@ -41,14 +42,14 @@ export default function Layout({ children, page }: Props) {
             sm:space-y-0 sm:z-0 sm:flex-row sm:space-x-10 sm:items-center h-full "
             >
               <Link to="/">{pageName("Home")}</Link>
-              <Link to="/about">{pageName("About")}</Link>
               <Link to="/services">{pageName("Services")}</Link>
               <Link to="/contact">{pageName("Contact")}</Link>
+              <Link to="/about">{pageName("About")}</Link>
               <Link to="/careers">{pageName("Careers")}</Link>
             </ul>
           </nav>
           <button
-            className="hidden sm:block border-2 rounded-lg px-2 h-9 
+            className="hidden sm:block border-2 rounded-lg px-2 min-h-[40px]
           self-center border-red-800 text-red-800"
           >
             <Link to="/contact" className="mx-auto ">
@@ -87,11 +88,11 @@ export default function Layout({ children, page }: Props) {
           </div>
           <div className="col-span-1">
             <h4 className="font-bold">Hours</h4>
-            <p>M 9:00AM – 5:00PM</p>
-            <p>T 9:00AM – 5:00PM</p>
-            <p>W 9:00AM – 5:00PM</p>
-            <p>T 9:00AM – 5:00PM</p>
-            <p>F 9:00AM – 5:00PM</p>
+            <p>M 8:00AM – 5:00PM</p>
+            <p>T 8:00AM – 5:00PM</p>
+            <p>W 8:00AM – 5:00PM</p>
+            <p>T 8:00AM – 5:00PM</p>
+            <p>F 8:00AM – 5:00PM</p>
           </div>
           <div className="col-span-2 sm:col-span-1 ">
             <h4 className="font-bold">Pages</h4>
@@ -103,7 +104,7 @@ export default function Layout({ children, page }: Props) {
               <Link to="/careers">Careers</Link>
             </nav>
           </div>
-          <div className="col-span-2 sm:col-span-1">
+          <div className="col-span-2 sm:col-span-1 space-y-1">
             <h4 className="font-bold">Contact</h4>
             <p>
               <Mail alt="mail" className="inline mx-2" />
@@ -112,6 +113,12 @@ export default function Layout({ children, page }: Props) {
             <p>
               <Phone alt="phone" className="inline mx-2" />
               416-471-0699
+            </p>
+            <p>
+              <LinkedIn alt="LinkedIn" className="inline mx-2" />
+              <a href="https://www.linkedin.com/company/henderson-reporting/">
+                linkedin.com/henderson-reporting
+              </a>
             </p>
           </div>
         </div>

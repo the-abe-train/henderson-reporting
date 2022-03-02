@@ -19,8 +19,8 @@ export default function CareersPage() {
         className={`${inside} px-4 space-y-4 sm:space-y-0 sm:flex justify-between`}
       >
         <div
-          className="p-4 h-fit space-y-4 drop-shadow-xl
-        bg-green-50 rounded max-w-sm"
+          className="p-4 space-y-4 drop-shadow-xl bg-green-100 rounded 
+        max-w-sm border-[1px] border-black h-min"
         >
           <StaticImage
             src="../images/stock/canada court.jpg"
@@ -57,7 +57,10 @@ export default function CareersPage() {
             </ul>
           </div>
         </div>
-        <div className="p-4 space-y-4 drop-shadow-xl bg-green-50 rounded max-w-sm">
+        <div
+          className="p-4 space-y-4 drop-shadow-xl bg-green-100 
+        h-min rounded max-w-sm border-[1px] border-black"
+        >
           <StaticImage
             src="../images/stock/writer.jpg"
             alt="Court room"
@@ -99,6 +102,9 @@ export default function CareersPage() {
             </ul>
           </div>
         </div>
+      </section>
+      <section className={`${inside}`}>
+        <p>Resumes can be sent to cvs@hendersonreporting.com</p>
       </section>
     </Layout>
   );

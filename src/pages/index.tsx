@@ -2,7 +2,7 @@ import React, { useEffect, useReducer, useState } from "react";
 import Layout from "../layouts/Layout";
 import Scales from "../images/icons/scales.svg";
 import Globe from "../images/icons/globe.svg";
-import Medical from "../images/icons/medical.svg";
+import Computer from "../images/icons/laptop.svg";
 import Maple from "../images/icons/maple.svg";
 import Calendar from "../images/icons/calendar.svg";
 import Document from "../images/icons/document.svg";
@@ -27,17 +27,17 @@ const servicesBrief = [
     icon: <Document width={75} />,
   },
   {
-    name: "Medical Transcriptions",
-    desc: "Medical office transcriptions and lectures.",
-    icon: <Medical width={75} />,
+    name: "Court Reporting",
+    desc: "Supremely accurate and efficient transcriptions and recordings.",
+    icon: <Computer width={75} />,
   },
   {
     name: "Year-round",
-    desc: "Medical office transcriptions and lectures.",
+    desc: "Courtroom services are available 365 days a year.",
     icon: <Calendar width={75} />,
   },
   {
-    name: "Bilingual",
+    name: "Multilingual",
     desc: "Recordings and transcriptions in English, French, and more.",
     icon: <Globe width={75} />,
   },
@@ -110,7 +110,7 @@ export default function IndexPage() {
         hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
         font-bold rounded-lg text-sm px-5 py-2.5 text-center"
             >
-              Get a Free Quote
+              Get a Free Consultation
             </button>
           </Link>
         </div>
@@ -124,9 +124,9 @@ export default function IndexPage() {
         </p>
         <hr className="w-1/2 mx-auto" />
       </section>
-      <section className="space-y-4 px-4 max-w-4xl mx-auto">
+      <section className="px-4 max-w-4xl mx-auto">
         <h2 className="font-header text-3xl font-bold">What we do</h2>
-        <div className="grid grid-cols-3 gap-y-6 md:grid-cols-9 auto-cols-min">
+        <div className="my-6 grid grid-cols-3 gap-y-6 md:grid-cols-9 auto-cols-min">
           {servicesBrief.map(({ name, desc, icon }) => {
             return (
               <React.Fragment key={name}>
@@ -144,6 +144,9 @@ export default function IndexPage() {
             );
           })}
         </div>
+        <Link to="/services" className="mt-4 underline">
+          See all services
+        </Link>
       </section>
       <section
         className={`${inside} bg-teal-900 text-green-50 px-4 py-16 space-y-4`}
@@ -165,8 +168,14 @@ export default function IndexPage() {
                 <b>{org}</b>
               </div>
               <div className="flex w-24 my-auto space-x-12 absolute bottom-4 right-0">
-                <Left height={30} width={20} onClick={() => dispatch("prev")} />
+                <Left
+                  className="cursor-pointer"
+                  height={30}
+                  width={20}
+                  onClick={() => dispatch("prev")}
+                />
                 <Right
+                  className="cursor-pointer"
                   height={30}
                   width={20}
                   onClick={() => dispatch("next")}
@@ -186,8 +195,8 @@ export default function IndexPage() {
           />
           <div className="md:w-1/3 space-y-4">
             <div>
-              <h3 className="text-lg font-bold">
-                Conveniently located at Yonge & Shepphard
+              <h3 className="text-lg font-bold leading-5 mb-1">
+                Conveniently located at Yonge & Sheppard
               </h3>
               <p>1901-5000 Yonge Street</p>
               <p>North York, ON, M2N 7E9</p>
@@ -197,15 +206,15 @@ export default function IndexPage() {
               <h3 className="text-lg font-bold">Office Hours</h3>
               <div className="grid">
                 <p>Monday</p>
-                <p className="col-start-2"> 9:00AM – 5:00PM</p>
+                <p className="col-start-2"> 8:00AM – 5:00PM</p>
                 <p>Tuesday</p>
-                <p className="col-start-2"> 9:00AM – 5:00PM</p>
+                <p className="col-start-2"> 8:00AM – 5:00PM</p>
                 <p>Wednesday</p>
-                <p className="col-start-2"> 9:00AM – 5:00PM</p>
-                <p>Thrusday</p>
-                <p className="col-start-2"> 9:00AM – 5:00PM</p>
+                <p className="col-start-2"> 8:00AM – 5:00PM</p>
+                <p>Thursday</p>
+                <p className="col-start-2"> 8:00AM – 5:00PM</p>
                 <p>Friday</p>
-                <p className="col-start-2"> 9:00AM – 5:00PM</p>
+                <p className="col-start-2"> 8:00AM – 5:00PM</p>
               </div>
             </div>
           </div>
@@ -213,7 +222,7 @@ export default function IndexPage() {
             <h3 className="text-lg font-bold">Contact Us</h3>
             <p>
               We offer your first consultation for free. Our services are
-              offerred online or on our premises.
+              offered online or on our premises.
             </p>
             <p className="m-2">
               <Mail alt="mail" className="inline mx-2" />
