@@ -44,7 +44,7 @@ export default function Layout({ children, page }: Props) {
               <Link to="/">{pageName("Home")}</Link>
               <Link to="/services">{pageName("Services")}</Link>
               <Link to="/contact">{pageName("Contact")}</Link>
-              <Link to="/about">{pageName("About")}</Link>
+              <Link to="/about">{pageName("About Us")}</Link>
               <Link to="/careers">{pageName("Careers")}</Link>
             </ul>
           </nav>
@@ -98,7 +98,7 @@ export default function Layout({ children, page }: Props) {
             <h4 className="font-bold">Pages</h4>
             <nav className="flex flex-row space-x-4 md:space-x-0 sm:flex-col">
               <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
+              <Link to="/about">About Us</Link>
               <Link to="/services">Services</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/careers">Careers</Link>
