@@ -8,7 +8,7 @@ const quotes = [
   {
     name: "Shannon Bardin",
     org: "Courtroom Monitor",
-    quote: `“Working at Henderson Reporting and Transcribing for three out of the four years of my undergraduate education has provided me with the experience and practical knowledge that aided me in getting into law school and succeeding once I was there. The position allowed me to connect with judges and lawyers that no mentorship program could have provided me with, and I was being compensated for doing it. Henderson Reporting and Transcribing is truly a wonderful place to work for students interested in the legal field.”`,
+    quote: `“Working at Henderson Reporting and Transcribing Inc. for three out of the four years of my undergraduate education has provided me with the experience and practical knowledge that aided me in getting into law school and succeeding once I was there. The position allowed me to connect with judges and lawyers that no mentorship program could have provided me with, and I was being compensated for doing it. Henderson Reporting and Transcribing Inc. is truly a wonderful place to work for students interested in the legal field.”`,
   },
   {
     name: "Jennifer Grabel",

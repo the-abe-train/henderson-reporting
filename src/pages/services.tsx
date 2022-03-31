@@ -10,12 +10,6 @@ import Calendar from "../images/icons/calendar.svg";
 import Document from "../images/icons/document.svg";
 import { inside } from "../styles/inside.module.css";
 
-// const services = [
-//   {
-
-//   }
-// ]
-
 export default function ServicesPage() {
   return (
     <Layout page="Services">
@@ -42,11 +36,12 @@ export default function ServicesPage() {
             <h2 className="text-xl font-header">Audio/video transcription</h2>
             <p>
               We provide high fidelity transcriptions of audio and video
-              recordings. Our expert transcribers don’t let anything fall
-              through the cracks, and work with great efficiency to meet strict
-              deadlines. We perform a variety of transcription services,
-              including legal (police DVDs, 911 calls, personal cell phone
-              calls/videos) and medical (office transcriptions and lectures).
+              recordings. Our ACT certified transcriptionists don’t let anything
+              fall through the cracks, and work with great efficiency to meet
+              strict deadlines. We perform a variety of transcription services,
+              including legal (courtroom proceedings, police DVDs, 911 calls,
+              personal cell phone calls/videos) and medical (office
+              transcriptions and lectures).
             </p>
           </div>
         </div>
@@ -60,9 +55,7 @@ export default function ServicesPage() {
             width={1000}
           />
           <div className="space-y-2 md:max-w-xl">
-            <h2 className="text-xl font-header">
-              Discovery and deposition services
-            </h2>
+            <h2 className="text-xl font-header">Discoveries and Depositions</h2>
             <p>
               Our team tackles highly sensitive discovery proceedings with the
               utmost reverence and professionalism. We do depositions in our
@@ -83,13 +76,13 @@ export default function ServicesPage() {
             width={1000}
           />
           <div className="space-y-2 md:max-w-xl">
-            <h2 className="text-xl font-header">Interpreter translations</h2>
+            <h2 className="text-xl font-header">Translations</h2>
             <p>
               Our team is fluently bilingual and conducts flawless translations
-              between French and English, and other languages are available upon
-              request. For live depositions, our certified translators can
-              operate online or in-person. For recordings or files, we translate
-              written documents as well as audio and video.
+              between French and English, and other languages on request. For
+              live depositions, our certified translators can operate online or
+              in-person. For recordings or files, we translate written documents
+              as well as audio and video.
             </p>
           </div>
         </div>
@@ -107,12 +100,13 @@ export default function ServicesPage() {
               Availability and Accessibility
             </h2>
             <p>
-              Our courtroom and staffing services are available 365 days a year.
-              Our staff maintains high availability by working flexible hours so
-              that your needs are met on time, in full, and meet the highest
-              standards of quality. Our team offers in-house services available
-              across Ontario, and digital services across Canada. We also work
-              with clients in the United States upon request.
+              Our courtroom and staffing services are available 365 days a year
+              to both weekday and WASH courts.. Our staff maintains high
+              availability by working flexible hours so that your needs are met
+              on time, in full, and meet the highest standards of quality. Our
+              team offers in-house services available across Ontario, and
+              digital services across Canada. We also work with clients in the
+              United States upon request.
             </p>
           </div>
         </div>
@@ -126,17 +120,13 @@ export default function ServicesPage() {
             width={1000}
           />
           <div className="space-y-2 md:w-[2000px]">
-            <h2 className="text-xl font-header">
-              Specialized Staffing Solutions
-            </h2>
+            <h2 className="text-xl font-header">Customized Projects</h2>
             <p>
-              If you require a courtroom service that was not listed above, we
-              provide staffing for countless other solutions upon request. Our
-              team of law clerks, court clerks, and reporters are well versed in
-              a multitude of Canadian legal matters and are equipped to handle a
-              myriad of challenges. Don’t hesitate to send us a message to
-              request a service you don’t see listed and we will get back to you
-              as soon as possible.
+              If you require a service that was not listed above, we provide
+              customized solutions upon request. Our team is well versed in
+              Canadian legal matters and are equipped to personalize your
+              project. Send us a message to request a tailor-made service to
+              suit your needs!
             </p>
           </div>
         </div>

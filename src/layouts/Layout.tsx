@@ -82,17 +82,15 @@ export default function Layout({ children, page }: Props) {
           <div>
             <h4 className="font-bold">Address</h4>
             <p>
-              1901-5000 Yonge St., <br />
+              1901 - 5000 Yonge St., <br />
               North York, ON, M2N 7E9
             </p>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 sm:w-36">
             <h4 className="font-bold">Hours</h4>
-            <p>M 8:00AM – 5:00PM</p>
-            <p>T 8:00AM – 5:00PM</p>
-            <p>W 8:00AM – 5:00PM</p>
-            <p>T 8:00AM – 5:00PM</p>
-            <p>F 8:00AM – 5:00PM</p>
+            <p>Monday to Friday</p>
+            <p>8:00 a.m. – 5:00 p.m.</p>
+            <p>(Weekend availability upon request)</p>
           </div>
           <div className="col-span-2 sm:col-span-1 ">
             <h4 className="font-bold">Pages</h4>

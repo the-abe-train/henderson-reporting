@@ -40,7 +40,7 @@ export default function ContactPage() {
           <div className="flex items-center space-x-2">
             <Map alt="map" className="inline" height={24} />
             <div>
-              <p>1901-5000 Yonge Street</p>
+              <p>1901 - 5000 Yonge Street</p>
               <p>North York, ON, M2N 7E9</p>
             </div>
           </div>

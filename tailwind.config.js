@@ -9,7 +9,6 @@ module.exports = {
         sans: ['"Fira Sans"']
       }
     }
-
   },
   plugins: [],
 }

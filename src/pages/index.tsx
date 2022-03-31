@@ -17,18 +17,18 @@ import { Link } from "gatsby";
 
 const servicesBrief = [
   {
-    name: "Legal Transcriptions",
-    desc: "Police DVDs, 911 calls, personal cell phone calls/videos.",
+    name: "ACT Certified Transcriptions",
+    desc: "Courtroom proceedings, police DVDs, 911 calls, personal cell phone calls/videos.",
     icon: <Scales width={75} />,
   },
   {
     name: "Depositions",
-    desc: "Depositions in-house and recordings over Zoom conference.",
+    desc: "In-house, at your location, Zoom conference.",
     icon: <Document width={75} />,
   },
   {
     name: "Court Reporting",
-    desc: "Supremely accurate and efficient transcriptions and recordings.",
+    desc: "Accurate and clear courtroom recordings.",
     icon: <Computer width={75} />,
   },
   {
@@ -38,7 +38,7 @@ const servicesBrief = [
   },
   {
     name: "Multilingual",
-    desc: "Recordings and transcriptions in English, French, and more.",
+    desc: "All our services are available in English, French. Other language services available. Contact us for further information.",
     icon: <Globe width={75} />,
   },
   {
@@ -99,7 +99,7 @@ export default function IndexPage() {
               Depositions & Transcriptions
             </h1>
             <p className="md:text-lg sm:my-5">
-              Based in Toronto, available across Canada.
+              Based in Toronto, available across Canada
             </p>
           </div>
           <Link to="/contact" className="mx-auto ">
@@ -110,7 +110,7 @@ export default function IndexPage() {
         hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
         font-bold rounded-lg text-sm px-5 py-2.5 text-center"
             >
-              Get a Free Consultation
+              Book a Free Consultation
             </button>
           </Link>
         </div>
@@ -205,24 +205,16 @@ export default function IndexPage() {
             <div>
               <h3 className="text-lg font-bold">Office Hours</h3>
               <div className="grid">
-                <p>Monday</p>
-                <p className="col-start-2"> 8:00AM – 5:00PM</p>
-                <p>Tuesday</p>
-                <p className="col-start-2"> 8:00AM – 5:00PM</p>
-                <p>Wednesday</p>
-                <p className="col-start-2"> 8:00AM – 5:00PM</p>
-                <p>Thursday</p>
-                <p className="col-start-2"> 8:00AM – 5:00PM</p>
-                <p>Friday</p>
-                <p className="col-start-2"> 8:00AM – 5:00PM</p>
+                <p>Monday to Friday 8:00 a.m.– 5:00 p.m.</p>
+                <p> (Weekend availability upon request)</p>
               </div>
             </div>
           </div>
           <div className="md:w-1/3 space-y-4">
             <h3 className="text-lg font-bold">Contact Us</h3>
             <p>
-              We offer your first consultation for free. Our services are
-              offered online or on our premises.
+              Your first consultation is free. Our services are offered online
+              or in-house. We can travel to your location upon request.
             </p>
             <p className="m-2">
               <Mail alt="mail" className="inline mx-2" />
