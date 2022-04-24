@@ -60,7 +60,6 @@ const quotes = [
     quote: `“I’ve used Henderson Reporting & Transcribing Inc. on a number of occasions.  They are professional, very reliable, and have excellent turnaround time for transcripts.  I will absolutely use them again and I highly recommend them for all your court reporting needs.”`,
   },
 ];
-const MAPS_API_KEY = process.env.GATSBY_MAPS_API_KEY || "";
 
 function reducer(state: number, action: "next" | "prev") {
   switch (action) {
@@ -188,10 +187,10 @@ export default function IndexPage() {
       <section className={`${inside} px-4 space-y-4 d:space-y-0`}>
         <h2 className="font-header text-3xl font-bold">How to Find Us</h2>
         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
-          <img
-            src={`https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x400&markers=5000+Yonge+St&key=${MAPS_API_KEY}`}
-            alt="Map to to the office"
-            className="border-2 border-black md:flex-grow md:h-60 self-center"
+          <StaticImage
+            src="../images/screenshots/map_to_office.png"
+            alt="light logo"
+            className="border-2 border-black md:flex-grow md:h-60 w-1/3 self-center"
           />
           <div className="md:w-1/3 space-y-4">
             <div>
@@ -216,11 +215,11 @@ export default function IndexPage() {
               Your first consultation is free. Our services are offered online
               or in-house. We can travel to your location upon request.
             </p>
-            <p className="m-2">
+            <p className="m-2 text-sm">
               <Mail alt="mail" className="inline mx-2" />
               sales@hendersonreporting.com
             </p>
-            <p className="m-2">
+            <p className="m-2 text-sm">
               <Phone alt="phone" className="inline mx-2" />
               416-471-0699
             </p>

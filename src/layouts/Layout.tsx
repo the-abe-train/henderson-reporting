@@ -20,12 +20,12 @@ export default function Layout({ children, page }: Props) {
   return (
     <div className="absolute w-full top-0 bottom-0 flex flex-col">
       <header className="z-10 py-2 px-4 bg-white drop-shadow relative">
-        <div className="flex justify-between md:w-full md:max-w-4xl md:mx-auto">
-          <div className="h-full w-auto">
+        <div className="flex justify-between items-center md:w-full md:max-w-4xl md:mx-auto">
+          <div className="h-full">
             <StaticImage
-              src="../images/logos/light_logo.png"
+              src="../images/logos/new_logo.png"
               alt="light logo"
-              className="h-auto w-28"
+              className="h-auto w-40"
             />
           </div>
           <button className="sm:hidden" onClick={() => setOpen(!open)}>
@@ -70,7 +70,7 @@ export default function Layout({ children, page }: Props) {
           <div className="col-span-2">
             <div className="w-52">
               <StaticImage
-                src="../images/logos/dark_logo.png"
+                src="../images/logos/new_dark_logo.png"
                 alt="dark logo"
                 className="justify-self-center"
               />

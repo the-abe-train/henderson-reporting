@@ -9,7 +9,7 @@ module.exports = {
     "gatsby-plugin-react-helmet", {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/logos/light_logo.png"
+        "icon": "src/images/logos/new_logo.png"
       }
     },
     "gatsby-plugin-sharp",
