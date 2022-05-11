@@ -15,6 +15,11 @@ const quotes = [
     org: "Director",
     quote: `“I am always happy to assist my interns with the next level of their career. They have been very successful in securing spots in law school or full-time positions within the Ministry of the Attorney General.  I take pride in watching my young staff climb the ladder of success.”`,
   },
+  {
+    name: "Lily Yang",
+    org: "Courtroom Monitor",
+    quote: `“I worked at Henderson Reporting and Transcribing throughout my undergraduate career, and I am proud to say that this is the best work experience I have had. It is eye-opening for me to witness and participate in the court proceedings that no other jobs or textbooks can teach you. I had the opportunity to connect with judges and lawyers and really understand the law more in-depth. I urge any students who are interested in the legal field to work at Henderson Reporting and Transcribing. We received a great training program before we start. Other seniors were always happy to help newcomers. We have such a great working environment, and the job also gave me the chance to connect with other students who are interested in the same path. More importantly, the management team really cares about their employees. My manager was extremely accommodating to my busy school schedule. Through my time working with Jennifer, I have always felt motivated to work and received immersive support from her. She is also extremely protective of us and gave clear, direct and consistent communication with her employees. I urge any students who are interested in the legal field to join Henderson Reporting. This is the proudest working experience on my resume. The skills I learned from this role and working under Henderson Reporting are applicable to any other fields as well.”`,
+  },
 ];
 
 export default function CareersPage() {
@@ -55,7 +60,7 @@ export default function CareersPage() {
             <div>
               <h3 className="font-bold">Acceptance Criteria</h3>
               <ul className="list-disc list-inside">
-                <li>1st or 3rd year undergraduate students</li>
+                <li>1st to 3rd year undergraduate students</li>
                 <li>Full day availability 2-4 days per week year-round</li>
                 <li>Must be fluent in English</li>
                 <li>Cannot have a criminal record or outstanding warrants</li>
@@ -100,11 +105,11 @@ export default function CareersPage() {
               <ul className="list-disc list-inside">
                 <li>ACT Certified</li>
                 <li>
-                  Access to a computer with Microsoft Office and a printer
+                  Access to a computer with Microsoft Office and high speed
+                  internet
                 </li>
-                <li>Fluent in English</li>
+                <li>Excellent grammar and attention to detail</li>
                 <li>Must have ability to listen to difficult case matter</li>
-                <li>Must be flexible with work hours</li>
                 <li>Cannot have a criminal record or outstanding warrants</li>
               </ul>
             </div>
@@ -113,7 +118,7 @@ export default function CareersPage() {
               <ul className="list-disc list-inside">
                 <li>Access to a car</li>
                 <li>Fluency in French</li>
-                <li>Weekend availability</li>
+                <li>Weekday and/or weekend availability</li>
               </ul>
             </div>
           </div>

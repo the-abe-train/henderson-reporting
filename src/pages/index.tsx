@@ -23,26 +23,26 @@ const servicesBrief = [
   },
   {
     name: "Depositions",
-    desc: "In-house, at your location, Zoom conference.",
+    desc: "In-house, at your location, or via Zoom conference.",
     icon: <Document width={75} />,
   },
   {
     name: "Court Reporting",
-    desc: "Accurate and clear courtroom recordings.",
+    desc: "Accurate and clear courtroom recordings at the OCJ and SCJ level.",
     icon: <Computer width={75} />,
   },
   {
-    name: "Year-round",
+    name: "Year-round Operations",
     desc: "Courtroom services are available 365 days a year.",
     icon: <Calendar width={75} />,
   },
   {
     name: "Multilingual",
-    desc: "All our services are available in English, French. Other language services available. Contact us for further information.",
+    desc: "All our services are available in English and French. Other language services available. Contact us for further information.",
     icon: <Globe width={75} />,
   },
   {
-    name: "Nationwide",
+    name: "Nationwide Services",
     desc: "In-house services across Ontario, digital services Canada-wide.",
     icon: <Maple width={75} />,
   },
@@ -213,7 +213,7 @@ export default function IndexPage() {
             <h3 className="text-lg font-bold">Contact Us</h3>
             <p>
               Your first consultation is free. Our services are offered online
-              or in-house. We can travel to your location upon request.
+              or in-house. We can also travel to your location upon request.
             </p>
             <p className="m-2 text-sm">
               <Mail alt="mail" className="inline mx-2" />

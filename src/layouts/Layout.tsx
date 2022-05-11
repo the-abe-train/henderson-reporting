@@ -75,14 +75,17 @@ export default function Layout({ children, page }: Props) {
                 className="justify-self-center"
               />
               <div>
-                <p>© Henderson Reporting {new Date().getFullYear()}</p>
+                <p>
+                  © Henderson Reporting & Transcribing Inc.{" "}
+                  {new Date().getFullYear()}
+                </p>
               </div>
             </div>
           </div>
           <div>
             <h4 className="font-bold">Address</h4>
             <p>
-              1901 - 5000 Yonge St., <br />
+              1901 - 5000 Yonge Street <br />
               North York, ON, M2N 7E9
             </p>
           </div>

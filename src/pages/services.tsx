@@ -33,15 +33,15 @@ export default function ServicesPage() {
             width={1000}
           />
           <div className="space-y-2 md:w-[2000px]">
-            <h2 className="text-xl font-header">Audio/video transcription</h2>
+            <h2 className="text-xl font-header">Audio/Video Transcription</h2>
             <p>
               We provide high fidelity transcriptions of audio and video
-              recordings. Our ACT certified transcriptionists don’t let anything
+              recordings. Our ACT certified transcriptionists don't let anything
               fall through the cracks, and work with great efficiency to meet
-              strict deadlines. We perform a variety of transcription services,
-              including legal (courtroom proceedings, police DVDs, 911 calls,
-              personal cell phone calls/videos) and medical (office
-              transcriptions and lectures).
+              strict deadlines. We perform a variety of legal transcription
+              services, including courtroom proceedings, police DVDs, 911 calls,
+              personal cell phone calls/videos, depositions, tribunals,
+              etcetera.
             </p>
           </div>
         </div>
@@ -57,12 +57,12 @@ export default function ServicesPage() {
           <div className="space-y-2 md:max-w-xl">
             <h2 className="text-xl font-header">Discoveries and Depositions</h2>
             <p>
-              Our team tackles highly sensitive discovery proceedings with the
-              utmost reverence and professionalism. We do depositions in our
-              office using all state-of-the-art software and recording equipment
-              that can accommodate up to 8 speakers. Or if preferred, we can
-              also bring all the equipment to your office, or even handle the
-              recordings over video conference (e.g. Zoom or Skype).
+              Our team tackles highly sensitive discovery and tribunal
+              proceedings with the utmost reverence and professionalism. We use
+              all state-of-the-art software and recording equipment that can
+              accommodate up to 8 speakers.Upon request, we can bring the
+              equipment to your office, or even handle the recordings over video
+              conference (Via Zoom or Skype or other platform).
             </p>
           </div>
         </div>
@@ -96,17 +96,15 @@ export default function ServicesPage() {
             width={1000}
           />
           <div className="space-y-2 md:max-w-xl">
-            <h2 className="text-xl font-header">
-              Availability and Accessibility
-            </h2>
+            <h2 className="text-xl font-header">Accessibility</h2>
             <p>
               Our courtroom and staffing services are available 365 days a year
-              to both weekday and WASH courts.. Our staff maintains high
+              to both weekday and WASH courts. Our staff maintains high
               availability by working flexible hours so that your needs are met
-              on time, in full, and meet the highest standards of quality. Our
-              team offers in-house services available across Ontario, and
-              digital services across Canada. We also work with clients in the
-              United States upon request.
+              on time, in full, att the highest standards of quality. Our team
+              offers in-house services available across Ontario, and digital
+              services across Canada. We also work with clients in the United
+              States upon request.
             </p>
           </div>
         </div>
