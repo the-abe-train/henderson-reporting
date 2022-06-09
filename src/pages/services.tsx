@@ -26,10 +26,11 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/video interview.jpg"
+            src="../images/stock/garage-band-programmer.jpg"
             alt="Video interview"
             className="my-4 rounded-sm drop-shadow-lg block"
             layout="constrained"
+            aspectRatio={4 / 3}
             width={1000}
           />
           <div className="space-y-2 md:w-[2000px]">
@@ -49,10 +50,11 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/table interview.jpg"
+            src="../images/stock/microphone-pencil.jpg"
             alt="Table interview"
             className="my-4 rounded-sm drop-shadow-lg block"
             width={1000}
+            aspectRatio={4 / 3}
           />
           <div className="space-y-2 md:max-w-xl">
             <h2 className="text-xl font-header">Discoveries and Depositions</h2>
@@ -70,9 +72,10 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/letters.jpg"
+            src="../images/stock/calendar-jan.jpg"
             alt="Letter tiles"
             className="my-4 rounded-sm drop-shadow-lg block"
+            aspectRatio={4 / 3}
             width={1000}
           />
           <div className="space-y-2 md:max-w-xl">
@@ -94,6 +97,7 @@ export default function ServicesPage() {
             alt="Staff laptops"
             className="my-4 rounded-sm drop-shadow-lg"
             width={1000}
+            aspectRatio={4 / 3}
           />
           <div className="space-y-2 md:max-w-xl">
             <h2 className="text-xl font-header">Accessibility</h2>
@@ -101,7 +105,7 @@ export default function ServicesPage() {
               Our courtroom and staffing services are available 365 days a year
               to both weekday and WASH courts. Our staff maintains high
               availability by working flexible hours so that your needs are met
-              on time, in full, att the highest standards of quality. Our team
+              on time, in full, at the highest standards of quality. Our team
               offers in-house services available across Ontario, and digital
               services across Canada. We also work with clients in the United
               States upon request.
@@ -112,10 +116,11 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/niagara falls 2.jpg"
-            alt="Niagara falls"
+            src="../images/stock/fingers-pointing-at-laptop.jpg"
+            alt="Pointing at laptop"
             className="my-4 rounded-sm drop-shadow-lg block"
             width={1000}
+            aspectRatio={4 / 3}
           />
           <div className="space-y-2 md:w-[2000px]">
             <h2 className="text-xl font-header">Customized Projects</h2>

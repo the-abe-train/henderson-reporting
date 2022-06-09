@@ -5,8 +5,7 @@ import Mail from "../images/icons/mail.svg";
 import Phone from "../images/icons/phone.svg";
 import Map from "../images/icons/map.svg";
 import { inside } from "../styles/inside.module.css";
-
-const MAPS_API_KEY = process.env.GATSBY_MAPS_API_KEY || "";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function ContactPage() {
   return (
@@ -15,7 +14,7 @@ export default function ContactPage() {
         className={`${contactBanner} ${inside}  h-64 flex flex-col
         justify-between shadow-inner relative`}
       >
-        <h1 className="text-4xl text-teal-900 font-header font-bold absolute bottom-0">
+        <h1 className="text-4xl text-teal-100 font-header font-bold absolute bottom-0 hidden sm:inline">
           Contact Us
         </h1>
       </section>
@@ -87,10 +86,10 @@ export default function ContactPage() {
               Send
             </button>
           </form>
-          <img
-            src={`https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x400&markers=5000+Yonge+St&key=${MAPS_API_KEY}`}
-            alt="Map to to the office"
-            className="border-2 border-black h-2/3"
+          <StaticImage
+            src="../images/screenshots/map_to_office.png"
+            alt="light logo"
+            className="border-2 border-black md:flex-grow md:h-60 w-1/3 self-center"
           />
         </div>
       </section>

@@ -109,7 +109,7 @@ export default function Layout({ children, page }: Props) {
             <h4 className="font-bold">Contact</h4>
             <p>
               <Mail alt="mail" className="inline mx-2" />
-              sales@hendersonreporting.com
+              jennifer@hendersonreporting.com
             </p>
             <p>
               <Phone alt="phone" className="inline mx-2" />

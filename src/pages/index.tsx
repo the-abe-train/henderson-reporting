@@ -217,7 +217,7 @@ export default function IndexPage() {
             </p>
             <p className="m-2 text-sm">
               <Mail alt="mail" className="inline mx-2" />
-              sales@hendersonreporting.com
+              jennifer@hendersonreporting.com
             </p>
             <p className="m-2 text-sm">
               <Phone alt="phone" className="inline mx-2" />
