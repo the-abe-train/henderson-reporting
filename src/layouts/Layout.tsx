@@ -6,7 +6,6 @@ import Phone from "../images/icons/phone.svg";
 import Mail from "../images/icons/mail.svg";
 import LinkedIn from "../images/icons/linked-in.svg";
 import { inside } from "../styles/inside.module.css";
-// import x from "../images/logos/"
 
 type Props = {
   children: ReactNode;
