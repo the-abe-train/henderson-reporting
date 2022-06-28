@@ -30,7 +30,7 @@ export default function ContactPage() {
         >
           <div className="flex items-center space-x-2">
             <Mail alt="mail" className="inline" />
-            <p className="col-start-2">sales@hendersonreporting.com</p>
+            <p className="col-start-2">jennifer@hendersonreporting.com</p>
           </div>
           <div className="flex items-center space-x-2">
             <Phone alt="phone" className="inline" />

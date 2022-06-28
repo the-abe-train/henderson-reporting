@@ -6,6 +6,7 @@ import Phone from "../images/icons/phone.svg";
 import Mail from "../images/icons/mail.svg";
 import LinkedIn from "../images/icons/linked-in.svg";
 import { inside } from "../styles/inside.module.css";
+// import x from "../images/logos/"
 
 type Props = {
   children: ReactNode;
@@ -23,8 +24,8 @@ export default function Layout({ children, page }: Props) {
         <div className="flex justify-between items-center md:w-full md:max-w-4xl md:mx-auto">
           <div className="h-full">
             <StaticImage
-              src="../images/logos/new_logo.png"
-              alt="light logo"
+              src="../images/logos/bold_logo.png"
+              alt="bold logo"
               className="h-auto w-40"
             />
           </div>
@@ -58,7 +59,7 @@ export default function Layout({ children, page }: Props) {
           </button>
         </div>
       </header>
-      <main className="flex-grow relative sm:space-y-8 ">{children}</main>
+      <main className="flex-grow relative sm:space-y-6 ">{children}</main>
       <footer
         className={`${inside} bg-black text-green-50 text-sm mt-8 space-y-4
        items-center`}

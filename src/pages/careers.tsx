@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import Carousel from "../components/Carousel";
 import Layout from "../layouts/Layout";
 import { careersBanner } from "../styles/banners.module.css";
 import { inside } from "../styles/inside.module.css";
@@ -26,7 +27,7 @@ export default function CareersPage() {
   return (
     <Layout page="Careers">
       <section
-        className={`${careersBanner} ${inside} p-4 h-64 flex flex-col
+        className={`${careersBanner} ${inside} p-4 flex flex-col
         justify-between shadow-inner relative`}
       >
         <h1 className="text-4xl text-teal-100 font-header font-bold absolute bottom-0">
@@ -123,31 +124,23 @@ export default function CareersPage() {
             </div>
           </div>
         </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPQjzhhFtrR41tpTScinYMkFzCHDHxmmOnqFYcI_Y5LqxTsg/viewform">
+          <button
+            className="w-fit mx-auto block
+            text-white font-bold bg-gradient-to-r from-teal-500 via-teal-600
+            to-teal-700
+            file:hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
+            file:font-bold rounded-lg text-lg px-5 py-2.5 text-center
+            border border-green-800 my-8"
+          >
+            Click here to apply!
+          </button>
+        </a>
         <p className="my-4">
-          Resumes can be sent to cvs@hendersonreporting.com
+          Resumes can be sent to jennifer@hendersonreporting.com
         </p>
       </section>
-      <section
-        className={`${inside} bg-teal-900 text-green-50 px-4 py-16 space-y-5`}
-      >
-        <h2 className="font-header text-2xl font-bold">
-          Employee Testimonials
-        </h2>
-        {quotes.map(({ quote, name, org }) => {
-          return (
-            <div className="space-y-2">
-              <blockquote>{quote}</blockquote>
-              <div className="flex justify-between">
-                <p>
-                  <b>
-                    {name}, {org}
-                  </b>
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </section>
+      <Carousel quotes={quotes} title={"Employee Testimonials"} />
       <section className={`${inside}`}></section>
     </Layout>
   );

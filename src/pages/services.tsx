@@ -61,8 +61,8 @@ export default function ServicesPage() {
             <p>
               Our team tackles highly sensitive discovery and tribunal
               proceedings with the utmost reverence and professionalism. We use
-              all state-of-the-art software and recording equipment that can
-              accommodate up to 8 speakers.Upon request, we can bring the
+              state-of-the-art software and recording equipment that can
+              accommodate up to 8 speakers. Upon request, we can bring the
               equipment to your office, or even handle the recordings over video
               conference (Via Zoom or Skype or other platform).
             </p>
@@ -72,20 +72,19 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/calendar-jan.jpg"
-            alt="Letter tiles"
+            src="../images/stock/globe-cropped.jpg"
+            alt="A globe"
             className="my-4 rounded-sm drop-shadow-lg block"
             aspectRatio={4 / 3}
-            width={1000}
+            width={800}
           />
           <div className="space-y-2 md:max-w-xl">
             <h2 className="text-xl font-header">Translations</h2>
             <p>
-              Our team is fluently bilingual and conducts flawless translations
-              between French and English, and other languages on request. For
-              live depositions, our certified translators can operate online or
-              in-person. For recordings or files, we translate written documents
-              as well as audio and video.
+              Our team is fluent in French and English. For live depositions,
+              our team can operate online or in-person. We can translate written
+              documents as well as audio and video. Other language services
+              available upon request.
             </p>
           </div>
         </div>
@@ -93,8 +92,8 @@ export default function ServicesPage() {
           className={`${inside} flex flex-col items-center sm:flex-row space-x-4 `}
         >
           <StaticImage
-            src="../images/stock/staff laptops.jpg"
-            alt="Staff laptops"
+            src="../images/stock/calendar-jan.jpg"
+            alt="Calendar on January"
             className="my-4 rounded-sm drop-shadow-lg"
             width={1000}
             aspectRatio={4 / 3}

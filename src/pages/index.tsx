@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React from "react";
 import Layout from "../layouts/Layout";
 import Scales from "../images/icons/scales.svg";
 import Globe from "../images/icons/globe.svg";
@@ -6,14 +6,14 @@ import Computer from "../images/icons/laptop.svg";
 import Maple from "../images/icons/maple.svg";
 import Calendar from "../images/icons/calendar.svg";
 import Document from "../images/icons/document.svg";
-import Left from "../images/icons/left.svg";
-import Right from "../images/icons/right.svg";
 import Mail from "../images/icons/mail.svg";
 import Phone from "../images/icons/phone.svg";
 import { StaticImage } from "gatsby-plugin-image";
 import { homeBanner } from "../styles/banners.module.css";
 import { inside } from "../styles/inside.module.css";
 import { Link } from "gatsby";
+import { Quote } from "../lib/schemas";
+import Carousel from "../components/Carousel";
 
 const servicesBrief = [
   {
@@ -48,7 +48,7 @@ const servicesBrief = [
   },
 ];
 
-const quotes = [
+const quotes: Quote[] = [
   {
     name: "Alexei Zaitsev, Esq.",
     org: "Mass Tsang LLP",
@@ -57,33 +57,11 @@ const quotes = [
   {
     name: "Robert Karrass, Esq.",
     org: "Karrass Law",
-    quote: `“I’ve used Henderson Reporting & Transcribing Inc. on a number of occasions.  They are professional, very reliable, and have excellent turnaround time for transcripts.  I will absolutely use them again and I highly recommend them for all your court reporting needs.”`,
+    quote: `“I've used Henderson Reporting & Transcribing Inc. on a number of occasions.  They are professional, very reliable, and have excellent turnaround time for transcripts.  I will absolutely use them again and I highly recommend them for all your court reporting needs.”`,
   },
 ];
 
-function reducer(state: number, action: "next" | "prev") {
-  switch (action) {
-    case "next":
-      return state < quotes.length - 1 ? state + 1 : 0;
-    case "prev":
-      return state !== 0 ? state - 1 : quotes.length - 1;
-    default:
-      throw new Error();
-  }
-}
-
 export default function IndexPage() {
-  const [name, setName] = useState("");
-  const [org, setOrg] = useState("");
-  const [quote, setQuote] = useState("");
-
-  const [quoteIdx, dispatch] = useReducer(reducer, 0);
-  useEffect(() => {
-    setName(quotes[quoteIdx].name);
-    setOrg(quotes[quoteIdx].org);
-    setQuote(quotes[quoteIdx].quote);
-  }, [quoteIdx]);
-
   return (
     <Layout page="Home">
       <section
@@ -118,8 +96,8 @@ export default function IndexPage() {
         <hr className="w-1/2 mx-auto" />
         <p className="text-center">
           <b>Henderson Reporting & Transcribing Inc.</b> offers a variety of
-          in-demand courtroom services. We uphold a guaranteed standard of
-          accuracy, efficiency, and security.
+          courtroom services. We uphold a guaranteed standard of accuracy,
+          efficiency, and security.
         </p>
         <hr className="w-1/2 mx-auto" />
       </section>
@@ -147,43 +125,9 @@ export default function IndexPage() {
           See all services
         </Link>
       </section>
-      <section
-        className={`${inside} bg-teal-900 text-green-50 px-4 py-16 space-y-4`}
-      >
-        <h2 className="font-header text-3xl font-bold">Our Clients</h2>
-        <div className="sm:flex sm:space-x-4">
-          <StaticImage
-            src="../images/stock/handshake.jpg"
-            alt="handshake"
-            width={400}
-            className="my-4 rounded-lg drop-shadow-lg"
-          />
-          <div className="w-5/6 relative space-y-20">
-            <blockquote className="py-3">{quote}</blockquote>
-            <div className="flex justify-between">
-              <div className="absolute bottom-4 left-0">
-                <b>{name}</b>
-                <br />
-                <b>{org}</b>
-              </div>
-              <div className="flex w-24 my-auto space-x-12 absolute bottom-4 right-0">
-                <Left
-                  className="cursor-pointer"
-                  height={30}
-                  width={20}
-                  onClick={() => dispatch("prev")}
-                />
-                <Right
-                  className="cursor-pointer"
-                  height={30}
-                  width={20}
-                  onClick={() => dispatch("next")}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <Carousel quotes={quotes} title="Our Clients" image={true} />
+
       <section className={`${inside} px-4 space-y-4 d:space-y-0`}>
         <h2 className="font-header text-3xl font-bold">How to Find Us</h2>
         <div className="md:flex space-y-4 md:space-y-0 md:space-x-4">
@@ -200,21 +144,17 @@ export default function IndexPage() {
               <p>1901-5000 Yonge Street</p>
               <p>North York, ON, M2N 7E9</p>
             </div>
-
             <div>
               <h3 className="text-lg font-bold">Office Hours</h3>
               <div className="grid">
-                <p>Monday to Friday 8:00 a.m.– 5:00 p.m.</p>
+                <p>Monday to Friday 8:00 a.m. to 5:00 p.m.</p>
                 <p> (Weekend availability upon request)</p>
               </div>
             </div>
           </div>
           <div className="md:w-1/3 space-y-4">
             <h3 className="text-lg font-bold">Contact Us</h3>
-            <p>
-              Your first consultation is free. Our services are offered online
-              or in-house. We can also travel to your location upon request.
-            </p>
+            <p>Your first consultation is free! Call us anytime!</p>
             <p className="m-2 text-sm">
               <Mail alt="mail" className="inline mx-2" />
               jennifer@hendersonreporting.com
@@ -224,11 +164,11 @@ export default function IndexPage() {
               416-471-0699
             </p>
             <button
-              style={{ border: "1px solid green" }}
               className="w-fit mx-auto block
            text-white font-bold bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700
            file:hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
-           file:font-bold rounded-lg text-sm px-5 py-2.5 text-center"
+           file:font-bold rounded-lg text-sm px-5 py-2.5 text-center
+           border border-green-800"
             >
               Book a Consultation Today
             </button>
