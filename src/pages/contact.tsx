@@ -49,18 +49,20 @@ export default function ContactPage() {
             action=""
             className="grid my-8 sm:my-0 grid-cols-2 gap-2"
             name="contact"
-            // @ts-ignore
-            netlify
+            data-netlify="true"
+            method="POST"
           >
             <input
               type="text"
               placeholder="First Name"
               className="border-2 border-gray-600 p-2 rounded-md"
+              required
             />
             <input
               type="text"
               placeholder="Last Name"
               className="border-2 border-gray-600 p-2 rounded-md"
+              required
             />
             <input
               type="tel"
@@ -71,15 +73,18 @@ export default function ContactPage() {
               type="email"
               placeholder="Email"
               className="border-2 border-gray-600 p-2 rounded-md"
+              required
             />
             <input
               type="text"
               placeholder="Subject"
               className="border-2 border-gray-600 p-2 rounded-md col-span-2"
+              required
             />
             <textarea
               placeholder="How may we help you?"
               className="border-2 border-gray-600 p-2 col-span-2 h-48 resize-y"
+              required
             />
             <button
               style={{ border: "1px solid green" }}
