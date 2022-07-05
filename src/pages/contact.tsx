@@ -46,12 +46,14 @@ export default function ContactPage() {
         </div>
         <div className="flex flex-col sm:flex-row sm:space-x-16 justify-between">
           <form
-            action=""
-            className="grid my-8 sm:my-0 grid-cols-2 gap-2"
-            name="contact"
+            method="post"
+            netlify-honeypot="bot-field"
             data-netlify="true"
-            method="POST"
+            name="contact"
+            className="grid my-8 sm:my-0 grid-cols-2 gap-2"
           >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               placeholder="First Name"
@@ -96,6 +98,7 @@ export default function ContactPage() {
             >
               Send
             </button>
+            <input type="reset" value="Clear" />
           </form>
           <StaticImage
             src="../images/screenshots/map_to_office.png"
