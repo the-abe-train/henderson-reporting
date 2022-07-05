@@ -45,7 +45,13 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row sm:space-x-16 justify-between">
-          <form action="" className="grid my-8 sm:my-0 grid-cols-2 gap-2">
+          <form
+            action=""
+            className="grid my-8 sm:my-0 grid-cols-2 gap-2"
+            name="contact"
+            // @ts-ignore
+            netlify
+          >
             <input
               type="text"
               placeholder="First Name"
