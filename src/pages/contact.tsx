@@ -58,34 +58,40 @@ export default function ContactPage() {
               type="text"
               placeholder="First Name"
               className="border-2 border-gray-600 p-2 rounded-md"
+              name="first-name"
               required
             />
             <input
               type="text"
               placeholder="Last Name"
               className="border-2 border-gray-600 p-2 rounded-md"
+              name="last-name"
               required
             />
             <input
               type="tel"
               placeholder="Phone number"
               className="border-2 border-gray-600 p-2 rounded-md"
+              name="phone"
             />
             <input
               type="email"
               placeholder="Email"
               className="border-2 border-gray-600 p-2 rounded-md"
+              name="email"
               required
             />
             <input
               type="text"
               placeholder="Subject"
               className="border-2 border-gray-600 p-2 rounded-md col-span-2"
+              name="subject"
               required
             />
             <textarea
               placeholder="How may we help you?"
               className="border-2 border-gray-600 p-2 col-span-2 h-48 resize-y"
+              name="text"
               required
             />
             <button
@@ -98,7 +104,6 @@ export default function ContactPage() {
             >
               Send
             </button>
-            <input type="reset" value="Clear" />
           </form>
           <StaticImage
             src="../images/screenshots/map_to_office.png"
