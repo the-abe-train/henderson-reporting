@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../layouts/Layout";
@@ -62,9 +63,9 @@ export default function ServicesPage() {
               Our team tackles highly sensitive discovery and tribunal
               proceedings with the utmost reverence and professionalism. We use
               state-of-the-art software and recording equipment that can
-              accommodate up to 8 speakers. Upon request, we can bring the
-              equipment to your office, or even handle the recordings over video
-              conference (Via Zoom or Skype or other platform).
+              accommodate up to 8 speakers simultaneously. Upon request, we can
+              bring the equipment to your office, or even handle the recordings
+              over video conference (Via Zoom or another secure platform).
             </p>
           </div>
         </div>
@@ -141,15 +142,18 @@ export default function ServicesPage() {
             <Calendar />
             <Document />
           </div>
-          <button
-            style={{ border: "1px solid green" }}
-            className="w-fit mx-auto block
-        text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700
-        hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
-        font-bold rounded-lg text-sm px-5 py-2.5 text-center"
-          >
-            Book a Consultation Today
-          </button>
+
+          <Link to="/contact" className="mx-auto ">
+            <button
+              style={{ border: "1px solid green" }}
+              className="w-fit mx-auto block
+            text-white bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700
+            hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
+            font-bold rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+              Book a Consultation Today
+            </button>
+          </Link>
         </div>
       </section>
     </Layout>

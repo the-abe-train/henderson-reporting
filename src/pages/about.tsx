@@ -19,10 +19,10 @@ export default function AboutPage() {
           {" "}
           Henderson Reporting & Transcribing Inc. incorporated in 2004 to
           service the Ministry of the Attorney General and private law firms
-          with accurate and efficient audio recordings and transcripts. We pride
-          ourselves on our small operation of 30-40 staff, finding a positive
-          balance between a supportive workplace culture and the fire for career
-          growth.
+          with accurate, secure, and efficient audio recordings and transcripts.
+          We pride ourselves on our small operation of 30-40 staff, finding a
+          positive balance between a supportive workplace culture and the fire
+          for career growth.
         </p>
         <p>
           Our team of courtroom monitors can be available in as little as 30

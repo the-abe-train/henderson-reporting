@@ -136,9 +136,6 @@ export default function CareersPage() {
             Click here to apply!
           </button>
         </a>
-        <p className="my-4">
-          Resumes can be sent to jennifer@hendersonreporting.com
-        </p>
       </section>
       <Carousel quotes={quotes} title={"Employee Testimonials"} />
       <section className={`${inside}`}></section>

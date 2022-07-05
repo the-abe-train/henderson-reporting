@@ -22,7 +22,7 @@ const servicesBrief = [
     icon: <Scales width={75} />,
   },
   {
-    name: "Depositions",
+    name: "Depositions & Examinations",
     desc: "In-house, at your location, or via Zoom conference.",
     icon: <Document width={75} />,
   },
@@ -33,17 +33,17 @@ const servicesBrief = [
   },
   {
     name: "Year-round Operations",
-    desc: "Courtroom services are available 365 days a year.",
+    desc: "Services are available 365 days a year.",
     icon: <Calendar width={75} />,
   },
   {
     name: "Multilingual",
-    desc: "All our services are available in English and French. Other language services available. Contact us for further information.",
+    desc: "All our services are available in English and French. Other language options available. Contact us for further information.",
     icon: <Globe width={75} />,
   },
   {
     name: "Nationwide Services",
-    desc: "In-house services across Ontario, digital services Canada-wide.",
+    desc: "In-person services across Ontario, digital services Canada-wide.",
     icon: <Maple width={75} />,
   },
 ];
@@ -73,7 +73,7 @@ export default function IndexPage() {
         >
           <div>
             <h1 className="text-4xl md:text-5xl text-teal-800 font-header font-bold">
-              Depositions & Transcriptions
+              Reporting & Transcriptions
             </h1>
             <p className="md:text-lg sm:my-5">
               Based in Toronto, available across Canada
@@ -95,9 +95,8 @@ export default function IndexPage() {
       <section className="space-y-4 px-4 max-w-4xl mx-auto">
         <hr className="w-1/2 mx-auto" />
         <p className="text-center">
-          <b>Henderson Reporting & Transcribing Inc.</b> offers a variety of
-          courtroom services. We uphold a guaranteed standard of accuracy,
-          efficiency, and security.
+          <b>Henderson Reporting & Transcribing Inc.</b> We uphold a guaranteed
+          standard of accuracy, efficiency, and security.
         </p>
         <hr className="w-1/2 mx-auto" />
       </section>
@@ -154,7 +153,7 @@ export default function IndexPage() {
           </div>
           <div className="md:w-1/3 space-y-4">
             <h3 className="text-lg font-bold">Contact Us</h3>
-            <p>Your first consultation is free! Call us anytime!</p>
+            <p>Your first consultation is free!</p>
             <p className="m-2 text-sm">
               <Mail alt="mail" className="inline mx-2" />
               jennifer@hendersonreporting.com

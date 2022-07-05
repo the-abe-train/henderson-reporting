@@ -25,7 +25,7 @@ export default function Layout({ children, page }: Props) {
             <StaticImage
               src="../images/logos/bold_logo.png"
               alt="bold logo"
-              className="h-auto w-40"
+              className="h-auto w-52"
             />
           </div>
           <button className="sm:hidden" onClick={() => setOpen(!open)}>
@@ -39,7 +39,7 @@ export default function Layout({ children, page }: Props) {
           >
             <ul
               className="flex flex-col z-10 space-y-2 
-            sm:space-y-0 sm:z-0 sm:flex-row sm:space-x-10 sm:items-center h-full "
+            sm:space-y-0 sm:z-0 sm:flex-row sm:space-x-8 sm:items-center h-full "
             >
               <Link to="/">{pageName("Home")}</Link>
               <Link to="/services">{pageName("Services")}</Link>
