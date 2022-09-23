@@ -14,7 +14,7 @@ import { inside } from "../styles/inside.module.css";
 import { Link } from "gatsby";
 import { Quote } from "../lib/schemas";
 import Carousel from "../components/Carousel";
-import { SEO } from "../components/seo";
+// import { SEO } from "../components/seo";
 
 const servicesBrief = [
   {
@@ -181,4 +181,4 @@ export default function IndexPage() {
   );
 }
 
-export const Head = () => <SEO />;
+// export const Head = () => <SEO />;

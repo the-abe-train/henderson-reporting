@@ -1,10 +1,10 @@
 module.exports = {
-  siteMetadata: {
-    title: `Henderson Reporting`,
-    siteUrl: `https://www.henderson-reporting.com`,
-    description: "Henderson Reporting & Transcribing Inc. We uphold a guaranteed standard of accuracy, efficiency, and security.",
-    image: '/favicon-32x32.png'
-  },
+  // siteMetadata: {
+  //   title: `Henderson Reporting`,
+  //   siteUrl: `https://www.henderson-reporting.com`,
+  //   description: "Henderson Reporting & Transcribing Inc. We uphold a guaranteed standard of accuracy, efficiency, and security.",
+  //   image: '/favicon-32x32.png'
+  // },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
