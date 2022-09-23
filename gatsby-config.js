@@ -9,7 +9,8 @@ module.exports = {
     "gatsby-plugin-react-helmet", {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/logos/new_logo.png"
+        "icon": "src/images/logos/new_logo.png",
+        "title": "Henderson Reporting"
       }
     },
     "gatsby-plugin-sharp",
