@@ -130,6 +130,7 @@ export default function Layout({ children, page }: Props) {
           </a>
           .
         </p>
+        <br />
       </footer>
     </div>
   );
