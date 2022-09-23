@@ -82,8 +82,7 @@ export default function ServicesPage() {
           <div className="space-y-2 md:max-w-xl">
             <h2 className="text-xl font-header">Translations</h2>
             <p>
-              Our team is fluent in French and English. For live depositions,
-              our team can operate online or in-person. We can translate written
+              Our team is fluent in French and English. We can translate written
               documents as well as audio and video. Other language services
               available upon request.
             </p>

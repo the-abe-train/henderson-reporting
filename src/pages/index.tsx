@@ -162,15 +162,17 @@ export default function IndexPage() {
               <Phone alt="phone" className="inline mx-2" />
               416-471-0699
             </p>
-            <button
-              className="w-fit mx-auto block
+            <Link to="/contact" className="mx-auto ">
+              <button
+                className="w-fit mx-auto block
            text-white font-bold bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700
            file:hover:bg-gradient-to-br focus:ring-4 focus:ring-teal-300 
            file:font-bold rounded-lg text-sm px-5 py-2.5 text-center
            border border-green-800"
-            >
-              Book a Consultation Today
-            </button>
+              >
+                Book a Consultation Today
+              </button>
+            </Link>
           </div>
         </div>
       </section>

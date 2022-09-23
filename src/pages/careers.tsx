@@ -71,7 +71,6 @@ export default function CareersPage() {
               <h3 className="font-bold">Assets (not required)</h3>
               <ul className="list-disc list-inside">
                 <li>Access to a car</li>
-                <li>Fluency in French</li>
                 <li>Weekend availability</li>
               </ul>
             </div>
@@ -118,7 +117,6 @@ export default function CareersPage() {
               <h3 className="font-bold">Assets (not required)</h3>
               <ul className="list-disc list-inside">
                 <li>Access to a car</li>
-                <li>Fluency in French</li>
                 <li>Weekday and/or weekend availability</li>
               </ul>
             </div>
